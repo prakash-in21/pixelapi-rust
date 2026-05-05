@@ -1,0 +1,18 @@
+[package]
+name = "pixelapi"
+version = "1.0.0"
+edition = "2021"
+description = "Official Rust SDK for PixelAPI — AI image, video, audio, 3D API"
+license = "MIT"
+repository = "https://github.com/prakash-in21/pixelapi-rust"
+homepage = "https://pixelapi.dev"
+documentation = "https://pixelapi.dev/docs"
+keywords = ["pixelapi", "ai", "image", "rest-api", "background-removal"]
+categories = ["api-bindings", "multimedia::images"]
+readme = "README.md"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
